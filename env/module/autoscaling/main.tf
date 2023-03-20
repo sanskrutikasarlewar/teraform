@@ -16,7 +16,7 @@ resource "aws_launch_configuration" "asg-launch-config" {
   user_data = var.user_data_base64
 
   lifecycle {
-    create_before_destroy = false ###
+    create_before_destroy = false
   }
 }
 
