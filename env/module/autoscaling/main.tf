@@ -3,6 +3,7 @@
   image_id      = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
   user_data     = var.user_data_base64
+  //////////////////////////
   //security_groups = var.security_groups
 } */
 
@@ -15,7 +16,7 @@ resource "aws_launch_configuration" "asg-launch-config" {
   user_data = var.user_data_base64
 
   lifecycle {
-    create_before_destroy = false
+    create_before_destroy = false ###
   }
 }
 
