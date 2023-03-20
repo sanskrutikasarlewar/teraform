@@ -1,4 +1,4 @@
-provider "aws" {
+/* provider "aws" {
     profile = "Anita"
     region= "ap-southeast-2"
 }
@@ -14,4 +14,4 @@ module "vpc" {
     tags = {
         Ownerapp = "Sanskruti"
     }
-}
+} */
